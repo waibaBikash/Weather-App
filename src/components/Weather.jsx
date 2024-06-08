@@ -48,14 +48,12 @@ const Weather = () => {
          temperature: Math.floor(data.main.temp),
          location: data.name,
          icon: icon
-
       })
     } catch (error) {
       setWeatherData(false);
       console.log("Error in fetching weather data");
     }
    }
-
     useEffect(()=>{
       search("Sydney");
     },[])
@@ -86,9 +84,6 @@ const Weather = () => {
             </div>
          </div>
       </>:<></>}
-       
     </div>
-  )
-}
-
+  )}
 export default Weather;
